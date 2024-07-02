@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import mysql from "mysql";
+import { handleOTP } from "./handlers.js";
 
 const app = express();
 app.use(cors());
@@ -23,16 +24,7 @@ db.connect((err) => {
   console.log("Connected to the database");
 });
 
-app.post("/OTP", (req, res) => {
-  const { type, data } = req.body; //login: Req1
-  //console.log([type, data]);
-  res.json("qwerty");
-});
-
-/* app.get("/OTP", (req, res) => {
-  //console.log(req.body);
-  //res.json("qwerty");
-}); */
+app.post("/OTP", handleOTP);
 
 app.post("/users", (req, res) => {
   const { type, data } = req.body; //logn:Req2, signup:Post2
@@ -63,32 +55,6 @@ app.post("/users", (req, res) => {
     });
   }
 });
-
-/* app.post('/users', (req, res) => {
-    const {type, data} = req.body;
-    console.log(type); Post2
-    console.log(data);
-    
-    const sql = "INSERT INTO user (first_name, last_name, email, contact) VALUES (?)";
-
-    const values  =[
-        data.fName,
-        data.lName,
-        data.email,
-        data.mobile
-    ]
-
-    db.query(sql, [values], (err, res) => {
-        if (err) {
-            console.log(err.message);
-        } else {
-            console.log("Entry added successfully!");
-        }
-    })
-
-    console.log(`type: ${type}  email: ${data.email}`);
-
-}) */
 
 app.listen(port, () => {
   console.log(`listening to ${port}`);
