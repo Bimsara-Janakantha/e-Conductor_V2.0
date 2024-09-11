@@ -1,0 +1,32 @@
+{
+    "company": {
+      "name": "e-Conductor",
+      "description": "e-Conductor is an innovative online bus ticket booking platform designed to provide a seamless and convenient travel experience. Our app offers real-time bus tracking, easy booking, and secure payment options.",
+      "services": [
+        "Online bus ticket booking",
+        "Real-time bus tracking",
+        "Secure payment options",
+        "24/7 customer support",
+        "Easy cancellation and refunds",
+        "Special discounts and offers"
+      ],
+      "features": {
+        "userFriendlyInterface": true,
+        "multiLanguageSupport": ["English", "Sinhala", "Tamil"],
+        "paymentMethods": ["Credit Card", "Debit Card", "Net Banking", "UPI"],
+        "liveTracking": true,
+        "notifications": ["Booking Confirmation", "Bus Arrival Alerts", "Discount Offers"]
+      },
+      "contact": {
+        "email": "support@e-conductor.com",
+        "phone": "+94 123 456 789",
+        "address": "123, Main Street, Kaduwela, Western Province, Sri Lanka"
+      },
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/e-conductor",
+        "twitter": "https://www.twitter.com/e-conductor",
+        "instagram": "https://www.instagram.com/e-conductor"
+      }
+    }
+  }
+  

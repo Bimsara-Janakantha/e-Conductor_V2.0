@@ -1,0 +1,24 @@
+{
+    "termsAndConditions": {
+      "introduction": "Welcome to e-Conductor! By using our mobile application, you agree to comply with and be bound by the following terms and conditions. Please review them carefully.",
+      "userAgreement": "By accessing or using e-Conductor, you agree to be bound by these terms. If you do not agree with any part of these terms, you must not use our app.",
+      "changesToTerms": "We reserve the right to modify these terms at any time. Any changes will be effective immediately upon posting on the app. Your continued use of the app after changes are posted constitutes your acceptance of the new terms.",
+      "userResponsibilities": {
+        "accountCreation": "You must provide accurate and complete information when creating an account. You are responsible for maintaining the confidentiality of your account and password.",
+        "prohibitedActivities": [
+          "Using the app for any unlawful purpose",
+          "Interfering with the app's operation",
+          "Attempting to gain unauthorized access to the app's systems"
+        ]
+      },
+      "intellectualProperty": "All content, trademarks, and data on e-Conductor are the property of the company or its licensors. You may not use any content without our prior written permission.",
+      "limitationOfLiability": "e-Conductor is provided 'as is' without any warranties. We are not liable for any damages arising from the use of our app.",
+      "privacyPolicy": "Your use of e-Conductor is also governed by our Privacy Policy, which can be found here.",
+      "contactInformation": {
+        "email": "support@e-conductor.com",
+        "phone": "+94 123 456 789",
+        "address": "123, Main Street, Kaduwela, Western Province, Sri Lanka"
+      }
+    }
+  }
+  
