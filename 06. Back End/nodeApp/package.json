@@ -1,0 +1,33 @@
+{
+  "name": "railway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "getmac": "^6.6.0",
+    "google-distance-matrix": "^1.1.1",
+    "macaddress": "^0.5.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.10.2",
+    "nodemailer": "^6.9.14",
+    "otp-generator": "^4.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "supertest": "^7.0.0",
+    "vitest": "^1.6.0"
+  }
+}

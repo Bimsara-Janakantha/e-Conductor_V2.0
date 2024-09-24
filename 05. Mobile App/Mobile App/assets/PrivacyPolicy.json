@@ -1,0 +1,27 @@
+{
+    "privacyPolicy": {
+      "introduction": "Welcome to e-Conductor! We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.",
+      "informationCollection": {
+        "personalInformation": "We may collect personal information such as your name, email address, phone number, and payment details when you create an account or make a booking.",
+        "deviceInformation": "We may collect information about your device, including the device model, operating system, and unique device identifiers.",
+        "usageData": "We may collect data on how you use the app, such as the features you access and the time spent on the app."
+      },
+      "dataUsage": {
+        "purpose": "We use the collected data to provide and improve our services, personalize your experience, and communicate with you.",
+        "sharing": "We do not sell your personal information. We may share data with third-party service providers to assist with app-related services, such as payment processing and analytics."
+      },
+      "userRights": {
+        "access": "You have the right to access the personal information we hold about you.",
+        "correction": "You have the right to correct any inaccuracies in your personal information.",
+        "deletion": "You have the right to request the deletion of your personal information."
+      },
+      "security": "We implement robust security measures, including encryption and access controls, to protect your data from unauthorized access and misuse.",
+      "changesToPolicy": "We may update this Privacy Policy from time to time. You will be notified of any significant changes, and your continued use of the app after such modifications implies your consent.",
+      "contactInformation": {
+        "email": "support@e-conductor.com",
+        "phone": "+94 123 456 789",
+        "address": "123, Main Street, Kaduwela, Western Province, Sri Lanka"
+      }
+    }
+  }
+  
