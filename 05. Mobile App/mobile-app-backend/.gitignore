@@ -1,0 +1,11 @@
+# All zip files
+.zip
+
+# All env files
+.env
+
+# node modules
+node_modules
+
+# Build directory
+dist

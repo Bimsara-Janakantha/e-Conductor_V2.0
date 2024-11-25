@@ -1,0 +1,119 @@
+Getting Started with the e-Conductor mobile app
+
+1. Install Node.js and npm
+Before you can run or build the project, you need to have Node.js and npm (Node Package Manager) installed.
+
+a) Download and Install Node.js
+Go to the official Node.js website and download the latest LTS version for your operating system (Windows, macOS, or Linux).
+
+Follow the installation instructions to install Node.js, which also includes npm.
+
+b) Verify Installation
+After installation, verify that Node.js and npm are installed by running the following commands in your terminal:
+
+node -v
+npm -v
+This will show the installed versions of Node.js and npm. If everything is set up correctly, you should see the version numbers for both.
+
+2. Download the Project
+Clone or download the repository to your local machine.
+
+git clone https://your-repository-url.git
+
+Alternatively, if you have the ZIP file, extract it to a location on your machine.
+
+3. Set Up the Backend (mobile-app-backend)
+a) Navigate to the mobile-app-backend folder.
+
+cd mobile-app-backend
+
+b) Install the required dependencies by running:
+
+npm install
+
+c) Create a .env file in the mobile-app-backend directory with the following content:
+
+MYNODEPORT="20240"
+MYSQLUSER="root"
+MYSQLHOST="your_mysql_host"
+MYSQLPASSWORD="your_mysql_password"
+MYSQLDATABASE="railway"
+MYSQLPORT="27821"
+LOCALMYSQLUSER="root"
+LOCALMYSQLHOST="localhost"
+LOCALMYSQLPASSWORD="your_local_mysql_password"
+LOCALMYSQLDATABASE="econductor"
+LOCALMYSQLPORT="your_local_mysql_port"
+COMPANY_EMAIL="your_company_email"
+APP_PASSWORD="your_password"
+SESSION_SECRET="your_secret_key"
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+
+Replace the placeholders (your_mysql_host, your_mysql_password, etc.) with your actual credentials.
+
+d) After the .env file is created, start the backend server:
+
+npm start
+
+Note the IP address and port (e.g., http://192.168.223.221:20240) for the backend server.
+
+4. Set Up the Mobile App (e-conductor_2.0)
+a) Navigate to the e-conductor_2.0 folder:
+
+cd ../e-conductor_2.0
+
+b) Install the required dependencies for the mobile app by running:
+
+npm install
+
+c) Create another .env file in the e-conductor_2.0 directory with the following content:
+
+BACKEND_URL="http://192.168.223.221:20240"
+GOOGLE_MAPS_API_KEY="your_google_maps_api_key"
+STRIPE_PUBLIC_KEY="your_stripe_public_key"
+
+Replace the placeholders (your_google_maps_api_key, your_stripe_public_key, etc.) with your actual keys and 
+BACKEND_URL with the IP and port of your backend
+
+d) After the .env file is created, start the mobile app:
+
+npm start
+
+5. Running the App in Expo (Recommended)
+You can use Expo Go to run the mobile app on your physical device or emulator:
+
+Download and open Expo Go on your device.
+Scan the QR code shown in the terminal after running npm start in the e-conductor_2.0 directory.
+
+6. Alternative 1: Running on Emulator
+If you prefer to run the app on an emulator:
+
+npm run android
+
+7. Alternative 2: Building APK for Android
+If you'd like to build an APK for Android instead of using Expo Go, follow the steps below:
+
+a) Install Expo CLI Globally
+Make sure you have Expo CLI installed globally on your machine:
+
+npm install -g expo-cli
+
+b) Create a Build
+Run the following command from the e-conductor_2.0 directory to create an APK build:
+
+expo build:android
+
+This command will ask you for your Expo account credentials and will begin the process of building the APK. If you don't have an Expo account, you'll be prompted to create one.
+Expo will guide you through setting up a keystore for signing the APK, if you don’t have one already. You can choose to have Expo manage the keystore for you or provide your own.
+
+The build will take a few minutes, and once it's finished, Expo will provide a link to download the APK.
+
+c) Install the APK on a Device
+Once the APK is built, download it from the Expo link provided, then install it on an Android device.
+
+Alternatively, you can use the following command to install the APK directly to an Android device connected via USB:
+
+expo install:android
+
+This will automatically push the APK to your connected Android device.
