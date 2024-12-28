@@ -32,8 +32,8 @@ export const Summary = async (req, res, next) => {
   const type = data.type;
 
   // Outputs
-  const summaryData = [],
-    xLabels = [];
+  const summaryData = [];
+  //xLabels = [];
 
   try {
     let sql, values, dateRange;
@@ -101,7 +101,7 @@ export const Summary = async (req, res, next) => {
 
     console.log("transformedResult: ", transformedResult);
 
-    xLabels = dateRange.map((date) => {
+    const xLabels = dateRange.map((date) => {
       const dateObj = new Date(date);
       return dateObj.toLocaleDateString("en-US", {
         month: "short",
