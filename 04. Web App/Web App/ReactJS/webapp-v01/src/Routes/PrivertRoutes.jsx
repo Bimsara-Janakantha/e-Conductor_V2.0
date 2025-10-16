@@ -5,13 +5,13 @@ const userType = JSON.parse(sessionStorage.getItem('userType')) || JSON.parse(lo
 
 export function PrivertRouteToSignin({isLogged}) {
   return (
-    isLogged === 'false' ? <Outlet/> : <Navigate to="/signin" />
+    isLogged !== 'true' ? <Outlet/> : <Navigate to="/signin" />
   )
 }
 
 export function PrivertRouteToHome({isLogged}) {
   return (
-    isLogged !== 'false' ? <Outlet/> : <Navigate to="/home" />
+    isLogged !== 'true' ? <Outlet/> : <Navigate to="/home" />
   )
 }
 
