@@ -11,7 +11,7 @@ export function PrivertRouteToSignin({isLogged}) {
 
 export function PrivertRouteToHome({isLogged}) {
   return (
-    isLogged !== 'true' ? <Outlet/> : <Navigate to="/home" />
+    isLogged !== 'false' ? <Outlet/> : <Navigate to="/home" />
   )
 }
 
