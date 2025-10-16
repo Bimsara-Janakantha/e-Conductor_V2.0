@@ -345,7 +345,7 @@ export default function Home({setLoading, language}) {
       </Box>
 
       {/* Testimonials Section */}      
-      <Box width="100%" p={'10px 30px'}>
+      {/* <Box width="100%" p={'10px 30px'}>
         <Texts variant="h4" textAlign="center" mb={4}>Happy Customers</Texts>
         <Grid container spacing={3} justifyContent={'center'}>
           <Grid item xs={12} sm={6} md={4} justifyContent={'center'} display={'flex'}>
@@ -370,7 +370,7 @@ export default function Home({setLoading, language}) {
       </Box>
       <TestimonialsSection activeStep={activeStep} setActiveStep={setActiveStep}/>
       <Button variant='outlined' onClick={handleOpen}>Leave a Review</Button>
-      <FeedbackForm open={open} handleClose={handleClose} handleSubmit={handleSubmit} />
+      <FeedbackForm open={open} handleClose={handleClose} handleSubmit={handleSubmit} /> */}
       
       {/* FAQ Section */}
       <Box width="100%" padding={'60px 30px'}>
